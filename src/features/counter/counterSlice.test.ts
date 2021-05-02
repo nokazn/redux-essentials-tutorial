@@ -2,12 +2,14 @@ import CounterReducers, { CounterState, increment, decrement, incrementByAmount 
 
 const initialState: CounterState = {
   value: 3,
+  status: 'idle',
 };
 
 describe('counter reducer', () => {
   it('should handle initial state', () => {
     expect(CounterReducers(undefined, { type: '' })).toEqual({
       value: 0,
+      status: 'idle',
     });
   });
 
