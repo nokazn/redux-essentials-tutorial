@@ -9,7 +9,7 @@ export const Counter = () => {
   const [incrementAmount, setIncrementAmount] = useState('2');
 
   return (
-    <div>
+    <div data-testid='counter'>
       <div className={styles.row}>
         <button className={styles.button} aria-label='Increment Value' onClick={() => dispatch(increment())}>
           +

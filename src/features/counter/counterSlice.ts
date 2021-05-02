@@ -1,15 +1,7 @@
 import { createSlice, Dispatch, PayloadAction } from '@reduxjs/toolkit';
 import type { RootState } from '../../app/store';
 
-// interface CounterState {
-//   value: number;
-// }
-
-// interface CounterReducers<S> {
-//   increment: (state: S) => void;
-//   decrement: (state: S) => void;
-//   incrementByAmount: (state: S, action: PayloadAction<number>) => void;
-// }
+export type CounterState = RootState['counter'];
 
 export const counterSlice = createSlice({
   name: 'counter',
